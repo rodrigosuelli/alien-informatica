@@ -1,0 +1,39 @@
+/*ANIMAÇÃO DE ZOOM NA IMAGEM*/
+
+.footer.segment {
+    padding: 4em 0em;
+}
+
+/*BANNER DO SITE*/
+.main {
+    margin-top: 80px;
+    border-bottom: 6px solid #2ada0d;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+/*MENU*/
+.ui.top.fixed.menu {
+    height: 80px;
+    border-bottom: 2px solid #2ada0d;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*COR NOS ITENS DO MENU*/
+.ui.menu .item:hover{
+    color: #4df963!important;
+}
+
+.ui.menu .item{
+  font-size: 17px;
+}
+
+.ui.inverted.menu .active.item{
+  color: #4df963!important;
+}
+
+
+.ui.menu .ui.dropdown .menu > .item:hover{
+  color: #4df963!important;
+}
+.ui.menu .ui.dropdown .menu>.active.item{
+    color: #4df963!important;
+}

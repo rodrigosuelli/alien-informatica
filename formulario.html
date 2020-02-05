@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- Site Properties -->
+        <title>Alien Informática - Formulário</title>
+        <!--Fav icon -->
+        <link rel="icon" href="https://i.imgur.com/bP4mJq0.png">
+
+        <!--Semantic UI css -->
+        <link rel="stylesheet" type="text/css" href="css/Semantic-UI/semantic.min.css">
+
+        <!-- Meu css -->
+        <link rel="stylesheet" type="text/css" href="css/meu_estilo.css">
+
+        <!--JS -->
+        <script src="jquery/jquery.min.js"></script>
+
+        <!--Semantic js-->
+        <script src="css/Semantic-UI/semantic.min.js"></script>
+
+
+
+    </head>
+
+    <body>
+        <div class="ui top inverted fixed menu">
+            <div class="ui container">
+
+                <a  href="index.html">
+                    <img src="img\logo\logo.png" alt="alien_l" class="ui image" >
+                </a>
+
+                <div class="right item">
+                    <a href="index.html" class="item">Home</a>
+                    <div class="ui simple dropdown item">
+                        Produtos <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="produtos/placamae/placamae.html" class="item">Placas Mãe</a>
+                            <a href="produtos/processador/processador.html" class="item">Processadores</a>
+                            <a href="produtos/hd/hd.html" class="item">Hard Disk (HD)/SSD</a>
+                            <a href="produtos/fonte/fonte.html" class="item">Fontes</a>
+                            <a href="produtos/memoria/memoria.html" class="item">Memórias</a>
+                            <a href="produtos/placadevideo/placadevideo.html" class="item">Placa de Vídeo</a>
+                        </div>
+                    </div>
+                    <a href="contato.html" class="item">Contato</a>
+                    <a href="sobrenos.html" class="item">Sobre Nós</a>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------->        
+        <div class="main">      
+            <img src="img/banner/BANNER_asus.png" alt="gamer_raiz" class="ui image"/> 
+        </div>
+
+        <div class="ui container">
+
+            <div class="ui horizontal divider">
+                <h1 class="ui center aligned header">Formulário:</h1>
+            </div>
+            <div class="ui indicating progress" id="minhabarra">
+                <div class="bar"></div>
+                <div class="progress"></div>
+            </div>
+            <div class="ui stackable two column grid">
+
+                <div class="column">
+                    <div class="ui basic segment">
+                        <div class="ui top attached label">
+                            <h3 class="ui header">DADOS PESSOAIS</h3>
+                        </div>
+
+                        <div class="ui large error form">
+
+
+                            <div class="two fields">
+                                <div class="required error field">
+                                    <label>Nome</label>
+                                    <input placeholder="Nome" type="text" id="form1">
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira seu nome.</div></div>
+                                <div class="required error field">
+                                    <label>Sobrenome</label>
+                                    <input placeholder="Sobrenome" type="text" id="form2">
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira seu sobrenome.</div></div>
+                            </div>
+                            <div class="required error field">
+                                <label>Gênero</label>
+                                <div class="ui selection dropdown">
+                                    <div class="default text">Selecione</div>
+                                    <i class="dropdown icon"></i>
+                                    <input type="hidden" name="gender" id="form3">
+                                    <div class="menu">
+                                        <div class="item" data-value="homem">Homem</div>
+                                        <div class="item" data-value="mulher">Mulher</div>
+                                        <div class="item" data-value="diferente">Diferenciado</div>
+                                    </div>
+                                </div>
+                                <div class="ui basic red pointing prompt label transition visible">Por favor escolha uma opção.</div>
+                            </div>
+                            <div class="required error field">
+                                <label>Email</label>
+                                <input placeholder="fumo@xcodes.net" type="email" id="form4">
+                                <div class="ui basic red pointing prompt label transition visible">Por favor insira seu e-mail.</div>
+                            </div>
+                            <div class="two fields">
+                                <div class="required error field">
+                                    <label>CPF</label>
+                                    <input placeholder="133.550.760-40" type="text" id="form5">
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira seu CPF.</div>
+                                </div>
+                                <div class="required error field">
+                                    <label>RG</label>
+                                    <input placeholder="42.327.122-2" type="text"  id="form6">
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira seu RG.</div>
+                                </div>
+                            </div>
+                            <div class="two fields">
+                                <div class="required error field">
+                                    <label>Telefone Residencial</label>
+                                    <input placeholder="42.327.122-2" type="tel" id="form7">
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira seu RG.</div>
+                                </div>
+                                <div class="required error field">
+                                    <label>Telefone Celular</label>
+                                    <input placeholder="42.327.122-2" type="tel" id="form8"> 
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira seu RG.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui basic segment">
+                        <div class="ui top attached label">
+                            <h3 class="ui header">ENDEREÇO DE ENTREGA</h3>
+                        </div>
+
+                        <div class="ui large error form">
+                            <div class="two fields">
+                                <div class="required error field">
+                                    <label>CEP</label>
+                                    <input placeholder="13.835-000" type="text" id="form9">
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira seu CEP.</div>
+                                </div>
+                                <div class="required error field">
+                                    <label>Estado</label>
+                                    <div class="ui selection dropdown">
+                                        <div class="default text">Selecione</div>
+                                        <i class="dropdown icon"></i>
+                                        <input type="hidden" name="gender" id="form10">
+                                        <div class="menu">
+                                            <div class="item">Acre (AC)</div>
+                                            <div class="item">Alagoas (AL)</div>
+                                            <div class="item">Amapá (AP)</div>
+                                            <div class="item">Amazonas (AM)</div>
+                                            <div class="item">Bahia (BA)</div>
+                                            <div class="item">Ceará (CE)</div>
+                                            <div class="item">Distrito Federal (DF)</div>
+                                            <div class="item">Espírito Santo (ES)</div>
+                                            <div class="item">Goiás (GO)</div>
+                                            <div class="item">Maranhão (MA)</div>
+                                            <div class="item">Mato Grosso (MT)</div>
+                                            <div class="item">Mato Grosso do Sul (MS)</div>
+                                            <div class="item">Minas Gerais (MG)</div>
+                                            <div class="item">Pará (PA)</div>
+                                            <div class="item">Paraíba (PB)</div>
+                                            <div class="item">Paraná (PR)</div>
+                                            <div class="item">Pernambuco (PE)</div>
+                                            <div class="item">Piauí (PI)</div>
+                                            <div class="item">Rio de Janeiro (RJ)</div>
+                                            <div class="item">Rio Grande do Norte (RN)</div>
+                                            <div class="item">Rio Grande do Sul (RS)</div>
+                                            <div class="item">Rondônia (RO)</div>
+                                            <div class="item">Roraima (RR)</div>
+                                            <div class="item">Santa Catarina (SC)</div>
+                                            <div class="item">São Paulo (SP)</div>
+                                            <div class="item">Sergipe (SE)</div>
+                                            <div class="item">Tocantins (TO)</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor escolha uma opção.</div>
+                                </div>
+                            </div>
+                            <div class="two fields">
+                                <div class="required error field">
+                                    <label>Cidade</label>
+                                    <input placeholder="Cidade" type="text" id="form11">
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira sua cidade.</div>
+                                </div>
+                                <div class="required error field">
+                                    <label>Bairro</label>
+                                    <input placeholder="Bairro" type="text" id="form12">
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira seu bairro.</div>
+                                </div>
+                            </div>
+                            <div class="two fields">
+                                <div class="required error field">
+                                    <label>Endereço</label>
+                                    <input placeholder="Endereço" type="text" id="form13">
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira seu endereço.</div>
+                                </div>
+                                <div class="required error field">
+                                    <label>Número</label>
+                                    <input placeholder="Número" type="text" id="form14">
+                                    <div class="ui basic red pointing prompt label transition visible">Por favor insira seu número.</div>
+                                </div> 
+                            </div>
+                            <div class="required error field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" tabindex="0" class="hidden">
+                                    <label>Eu aceito os Termos e Condições</label>
+                                </div>                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui container">
+
+                <div class="ui clearing right aligned basic segment">
+                    <a href="index.html">
+                        <div class="ui icon huge negative animated button">
+                            <div class="visible content">
+                                Cancelar <i class="frown outline icon"></i></div>
+                            <div class="hidden content">
+                                <i class="left arrow icon"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="ui icon huge labeled positive animated test button" tabindex="0">
+                        <div class="visible content">
+                            Continuar <i class="shopping cart icon"></i></div>
+                        <div class="hidden content">
+                            <i class="right arrow icon"></i>
+                        </div>             
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+        <div class="ui test modal">
+            <i class="close icon"></i>
+            <div class="header">
+                Pedido Enviado Com Sucesso.
+            </div>
+            <div class="image content">
+                <div class="ui medium image">
+                    <img src="http://sweetclipart.com/multisite/sweetclipart/files/imagecache/middle/space_alien_head_gray.png">
+                </div>
+                <div class="description">
+                    <div class="ui header">Seu produto está a caminho.</div>
+                    <p>Enquanto isso sinta-se à vontade para navegar pelo site e aproveitar outras promoçoes. :-)</p>
+                    <p>Obrigado pela preferência!!!</p>
+                </div>
+            </div>
+            <div class="actions">
+                <a href="index.html">
+                    <div class="ui positive right labeled icon big button">
+
+                        Finalizar Compra
+
+                        <i class="checkmark icon"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="ui hidden divider"></div>
+
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui inverted divided stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">Produtos</h4>
+                        <div class="ui inverted link list">
+                            <a href="produtos/placamae/placamae.html" class="item">Placas Mãe</a>
+                            <a href="produtos/processador/processador.html" class="item">Processadores</a>
+                            <a href="produtos/hd/hd.html" class="item">Hard Disk (HD)/SSD</a>
+                            <a href="produtos/fonte/fonte.html" class="item">Fontes</a>
+                            <a href="produtos/memoria/memoria.html" class="item">Memórias</a>
+                            <a href="produtos/placadevideo/placadevideo.html" class="item">Placa de Vídeo</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">Alunos</h4>
+                        <div class="ui inverted link list">
+                            <div class="item">Eusébio</div>
+                            <div class="item">Gabriel Santim</div>
+                            <div class="item">José Murilo</div>
+                            <div class="item">Lucas</div>
+                            <div class="item">Renan</div>
+                            <div class="item">Rodrigo</div>
+                        </div>
+                    </div>
+                    <div class="seven wide column center aligned">
+                        <h4 class="ui inverted header">Copyright © Alien Informática 2018</h4>
+                        <p>Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $('.test.modal')
+                    .modal({
+                        blurring: true
+                    })
+                    .modal('attach events', '.test.button', 'show')
+                    ;
+
+            $('.ui.checkbox')
+                    .checkbox()
+                    ;
+
+            $('.ui.form')
+                    .form({
+                        fields: {
+                            form1: {
+                                identifier: 'form1',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form2: {
+                                identifier: 'form2',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form3: {
+                                identifier: 'form3',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form4: {
+                                identifier: 'form4',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form5: {
+                                identifier: 'form5',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form6: {
+                                identifier: 'form6',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form7: {
+                                identifier: 'form7',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form8: {
+                                identifier: 'form8',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form9: {
+                                identifier: 'form9',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form10: {
+                                identifier: 'form10',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form11: {
+                                identifier: 'form11',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form12: {
+                                identifier: 'form12',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form13: {
+                                identifier: 'form13',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            },
+                            form14: {
+                                identifier: 'form14',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                    }
+                                ]
+                            }
+                        }
+                    })
+                    ;
+            $('.ui.dropdown')
+                    .dropdown()
+                    ;
+            $('#minhabarra').progress({
+                percent: 100,
+                total: 100
+
+            });
+        </script>
+    </body>
+</html>
